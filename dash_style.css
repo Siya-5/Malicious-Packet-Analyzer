@@ -1,0 +1,141 @@
+.flex-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202b38;
+}
+.flex-cont > div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topR {
+    background: #486485;
+    width: 10%;
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    border-width:2px;
+    border-style:solid;
+        border-color:black;
+}
+.topM {
+    background: #486485;
+    width: 10%;
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    display: flex;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}
+.topL {
+    background: #486485;
+    width: 10%;
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    display: flex;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}
+
+a.fill-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    font-size: 18px;
+    color: #f4f4f4;
+    background-color: #202b38;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-child {
+    background-color: #486485;
+    border: 2px solid black;
+    width: 1rem;
+    padding: 2rem 1rem;
+    margin:  1rem;
+    flex-grow: 3;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.bigNum {
+  color: white;
+  font-size: 75px;
+  text-align: center:
+}
+
+#statsText {
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.25;
+    text-align: left;
+}
+#treeText {
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.25;
+    text-align: left;
+}
+#susPackets {
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 18px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+
+svg {
+  background: #9ecae1;
+}
+.mesh {
+  fill:none;
+  stroke: white;
+  stroke-width: 0.5px;
+}
+.land {
+  fill: #41ab5d;
+}
+

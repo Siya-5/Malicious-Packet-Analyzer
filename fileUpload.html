@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP File Upload</title>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+
+        <!-- need total 4 pages: intro, demo, writeup, try it -->
+</head>
+<body>
+        <div class="flex-cont">  <div> <h1>PHP File Upload</h1> </div>  </div>
+
+        <div class="topBar">
+                <!--<div class="topR"> <a href="fileUpload.html" class="fill-div"> Try It </a>  </div>
+                <div class="topM"> <a href="writeUp.html" class="fill-div"> Write-Up </a>  </div>
+                <div class="topL"> <a href="index.html" class="fill-div"> Features </a>  </div>-->
+
+
+                <div class="topR"> <a href="fileUpload.html" class="fill-div"> Try It </a>  </div>
+                <div class="topM"> <a href="index.html" class="fill-div"> Features </a>  </div>
+        </div>
+
+    <!-- <div class="flex-container">
+        <div class="flex-child">
+            <p>Number of IP Addresses</p>
+            <b> <p class="bigNum" id="bigNum"></p></b>
+        </div>
+        <div class="flex-child">
+            <p>Potentially Malicious Packets</p>
+            <div id="susPackets"></div>
+        </div>
+    </div> -->
+    <h2 class="center"> Check out a pre-analyzed pcap file to see the model in action!</h2>
+    <div class="flex-cont">
+        <!-- <div> <button class="submit-button">bruteforce.pcap</button> </div> -->
+        <div> <a href="dashboard.html?name=bruteforce" class="submit-button">File1.pcap</a> </div>
+        <!-- <div> <button class="submit-button">File2.pcap</button> </div>     <!-- add link here -->
+        <!-- <div> <button class="submit-button">File3.pcap</button> </div>  <!-- add link here -->
+    </div>
+    <br>
+
+
+
+<form class="main-content" method="post" enctype="multipart/form-data" action="process-form.php">
+
+        <!--  put the log file and input into a div box and center it and make it pretty + add box on bottom to write my story + tabs for static webpage stuff  -->
+        <h2 class="center"> Or upload your own pcap network packet log file! </h2>
+        <div class="submit-box">
+                <label for="logFile" class="center"> Log file: </label> <br>
+                <input type="file" id="logFile" name="logFile">
+        </div>
+
+
+        <br>
+    <div class="flex-cont">  <div> <button class="submit-button">Upload</button> </div>  </div>
+        <!--<a href="malResults.html"><button class="button button1">Click Me!</button></a>-->
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PCAP Analysis</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dash_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <!-- new entries -->
+</head>
+<body>
+    <div class="topBar">
+            <!-- <div class="topR"> <a href="fileUpload.html" class="fill-div"> Try It </a>  </div>
+            <div class="topM"> <a href="writeUp.html" class="fill-div"> Write-Up </a>  </div>
+            <div class="topL"> <a href="index.html" class="fill-div"> Features </a>  </div> -->
+            <div class="topR"> <a href="fileUpload.html" class="fill-div"> Try It </a>  </div>
+            <div class="topM"> <a href="index.html" class="fill-div"> Features </a>  </div>
+    </div>
+
+
+
+    <!-- <h1>IP Address Dashboard</h1> -->
+    <div class="flex-cont">  <div> <h1>PCAP Analysis</h1> </div>  </div>
+    <!-- <h2>Frequency of top five IP addresses</h2> -->
+
+    <!-- <div id="geoMapDiv"></div>-->
+
+    <!-- little button here to go to the new page
+    <a href="malResults.html"><button class="button button1">Click Me!</button></a> -->
+
+    <div class="flex-container">
+        <div class="flex-child">
+            <p>Number of IP Addresses</p>
+            <b> <p class="bigNum" id="bigNum"></p></b>
+        </div>
+        <div class="flex-child">
+            <p>Potentially Malicious Packets</p>
+            <div id="susPackets"></div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <!-- <div class="flex-child" id="targetChart">
+            <p id="TargetW">73.74.203.9 found</p>
+            <p id="targetPara"></p>
+        </div>        EDIT HERE -->
+        <div class="flex-child">
+            <p>AI Statistics</p>
+            <div id="statsText"></div>
+        </div>
+        <div class="flex-child">
+            <p>Decision Tree Visualizer</p>
+            <div id="treeText"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex-container">
+        <div class="flex-child">
+            <p id="malText"></p>
+            <canvas id="malPortChart"></canvas>
+        </div>
+        <div class="flex-child parentDiv" id="geoMapDiv">
+            <p>Geolocation of the most common IP addresses</p>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-child">
+            <p>Time(x) & Length (y)</p>
+            <canvas id="timeChart"></canvas>
+        </div>
+        <div class="flex-child">
+            <p>Frequency of Protocols</p>
+            <canvas id="protocolChart"></canvas>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-child vert-child">
+            <p>5 most common source IPs</p>
+            <canvas id="srcIPChart"></canvas>
+        </div>
+        <div class="flex-child vert-child">
+            <p>5 most common destination IPs</p>
+            <canvas id="destIPChart"></canvas>
+        </div>
+    </div>
+
+    <script src="graphic.js"></script>
+</body>
+</html>
